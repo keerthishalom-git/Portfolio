@@ -15,13 +15,16 @@
 }
 
 :root {
-    --bg-primary: #F4DECB;
-    --bg-secondary: #E2CFC6;
-    --text-primary: #49274A;
-    --accent-primary: #94618E;
-    --accent-secondary: #49274A;
+    --bg-primary: #E6E6FA;      /* Lavender (light background) */
+    --bg-secondary: #B7B1D5;    /* Periwinkle (soft section background) */
+
+    --text-primary: #373784;    /* Marian Blue (headings / titles) */
+    --accent-primary: #5F599A;  /* Ultra Violet (buttons / highlights) */
+    --accent-secondary: #877BB0;/* African Violet (hover / borders / subtle accents) */
+
     --white: #ffffff;
-    --shadow: rgba(148, 97, 142, 0.1);
+    --shadow: rgba(55, 55, 132, 0.15); /* Soft shadow based on darkest tone */
+}
 }
 
 body {
@@ -1016,3 +1019,4 @@ footer {
 </body>
 
 </html>
+
