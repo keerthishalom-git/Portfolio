@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: 'Antic Didone', serif;
+    font-family: 'Antic Didone', Antic Didone;
     line-height: 1.6;
     color: var(--text-primary);
     background: var(--bg-primary);
@@ -1014,4 +1014,5 @@ footer {
         <p>The CSS is ready to use - just copy it from the artifact above and replace your existing CSS file!</p>
     </div>
 </body>
+
 </html>
