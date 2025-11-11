@@ -16,31 +16,23 @@
 
 :root {
     /* Color Palette */
-    --cool-gray: #A0A49C;        /* Cool Gray/Taupe (Top) */
-    --soft-lavender: #9B7CC5;    /* Soft Lavender/Violet */
-    --pale-sage: #B3CA8B;        /* Pale Sage/Lime Green */
-    --light-cream: #E4ECC7;      /* Very Light Lime Green/Cream */
-    --deep-moss: #739C46;        /* Deep Moss Green (Bottom) */
+    --bg-secondary: #B7B1D5;    /* Periwinkle (soft section background) */
+    --text-primary: #373784;    /* Marian Blue (headings / titles) */
+    --accent-primary: #5F599A;  /* Ultra Violet (buttons / highlights) */
+    --accent-secondary: #877BB0;/* African Violet (hover / borders / subtle accents) */
     
-    /* Semantic Color Variables */
-    --bg-primary: #E4ECC7;       /* Light Cream background */
-    --bg-secondary: #B3CA8B;     /* Pale Sage section background */
-    --text-primary: #739C46;     /* Deep Moss for headings/titles */
-    --text-secondary: #A0A49C;   /* Cool Gray for body text */
-    --accent-primary: #9B7CC5;   /* Soft Lavender for buttons/highlights */
-    --accent-secondary: #B3CA8B; /* Pale Sage for hover/borders */
     --white: #ffffff;
-    --shadow: rgba(115, 156, 70, 0.15); /* Soft shadow based on Deep Moss */
-}
+    --shadow: rgba(55, 55, 132, 0.15); /* Soft shadow based on Marian Blue */
 }
 
+/* Antic Didone Font */
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Antic Didone', serif;
     line-height: 1.6;
     color: var(--text-primary);
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
     overflow-x: hidden;
 }
 
@@ -1028,5 +1020,6 @@ footer {
 </body>
 
 </html>
+
 
 
