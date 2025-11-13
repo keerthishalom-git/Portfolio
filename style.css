@@ -1087,8 +1087,87 @@ button, a, .btn {
         </div>
 
         <p style="margin-top: 2rem; color: #5F599A; text-align: center; font-size: 1.1rem;">
-            <strong>Ready to use!</strong> Copy the complete CSS from above and watch your portfolio transform into an elegant, professional showcase. 💜
+            <strong>Ready to use!</strong> 
         </p>
     </div>
 </body>
 </html>
+/* Profile Picture in Hero Section */
+.profile-image-wrapper {
+    position: relative;
+    width: 320px;
+    height: 320px;
+}
+
+.profile-image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(95, 89, 154, 0.4);
+    border: 5px solid var(--white);
+}
+
+.profile-image-container::before {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary), var(--bg-secondary));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    100% { transform: rotate(360deg); }
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Decorative floating elements */
+.profile-decoration {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+}
+
+.decoration-1 {
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background: var(--accent-primary);
+    animation: float 6s ease-in-out infinite;
+}
+
+.decoration-2 {
+    bottom: -15px;
+    left: -15px;
+    width: 80px;
+    height: 80px;
+    background: var(--accent-secondary);
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Mobile responsive for profile picture */
+@media (max-width: 768px) {
+    .profile-image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+}
+
